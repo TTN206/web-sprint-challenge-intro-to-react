@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Characters from "characters";
+import Character from "./components/Character";
 import styled from "styled-components";
 import axios from 'axios';
-import { BASE_URL, API_KEY } from "./components/Constants";
+// import { BASE_URL, API_KEY } from "./components/Constants";
 
 
 const App = () => {
@@ -18,20 +18,29 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get( `${BASE_URL}/api/${API_KEY}/` )
+      .get( 'https://swapi.dev/api/people/' )  // `${BASE_URL}/api/${API_KEY}/`
       .then(( res ) => {
         setCharacters( res.data.results )
       })
       .catch(( err ) => {
         console.log( err, "Commander, we got problems" )
       })
-  });
+  }, [] );
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <H1 className="Header">Characters</H1>
+      <Character characters = { characters } />
+
     </div>
   );
 }
 
 export default App;
+
+
+// styled Comps:
+const H1 = styled.h1`
+font-weight: bold;
+
+`

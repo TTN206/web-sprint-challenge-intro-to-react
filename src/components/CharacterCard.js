@@ -9,11 +9,11 @@ export default function CharacterCard ( props ) {
     return (
         <CardForm>
             <CardDetails>
-                <h3>name</h3>
-                <p>gender</p>
-                <p>height</p>
-                <p>mass</p>
-                <p>skin_color</p>  
+                <h3>{ character.name }</h3>
+                <p>{ character.gender }</p>
+                <p>{ character.height }</p>
+                <p>{ character.mass }</p>
+                <p>{ character.skin_color }</p>  
             </CardDetails>   
         </CardForm>
     )

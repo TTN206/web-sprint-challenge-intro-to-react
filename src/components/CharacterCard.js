@@ -9,11 +9,11 @@ export default function CharacterCard ( props ) {
     return (
         <CardForm>
             <CardDetails>
-                <h3>{ character.name }</h3>
-                <p>{ character.gender }</p>
-                <p>{ character.height }</p>
-                <p>{ character.mass }</p>
-                <p>{ character.skin_color }</p>  
+                <h3>NAME: { character.name }</h3>
+                <p>GENDER: { character.gender }</p>
+                <p>HEIGHT: { character.height }</p>
+                <p>MASS: { character.mass }</p>
+                <p>SKIN COLOR: { character.skin_color }</p>  
             </CardDetails>   
         </CardForm>
     )
@@ -22,7 +22,7 @@ export default function CharacterCard ( props ) {
 // styled-Comp: WILL BE ADDING MORE INFO ONCE EVERYTHING IS FUNCTIONAL
 
 const CardForm = styled.div`
-
+width: 50$
 `
 
 const CardDetails = styled.div`

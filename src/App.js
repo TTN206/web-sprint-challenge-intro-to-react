@@ -20,7 +20,7 @@ const App = () => {
     axios
       .get( 'https://swapi.dev/api/people/' )  // `${BASE_URL}/api/${API_KEY}/`
       .then(( res ) => {
-        setCharacters( res.data.results )
+        setCharacters( res.data, "This is the response, commander!" )
       })
       .catch(( err ) => {
         console.log( err, "Commander, we got problems" )
@@ -42,5 +42,4 @@ export default App;
 // styled Comps:
 const H1 = styled.h1`
 font-weight: bold;
-
 `

@@ -25,12 +25,15 @@ export default function Character ( props ) {
 // styled Comps  /* will add style in a bit */
 
 const CardDiv = styled.div`
+width: 100;
+display: flex;
+flex: 
 padding: 2%;
 `
 
 
 const Card = styled.div`
-width: 30%;
+width: 60%;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly

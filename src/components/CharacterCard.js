@@ -22,7 +22,7 @@ export default function CharacterCard ( props ) {
 // styled-Comp: WILL BE ADDING MORE INFO ONCE EVERYTHING IS FUNCTIONAL
 
 const CardForm = styled.div`
-width: 50$
+width: 50%;
 `
 
 const CardDetails = styled.div`
